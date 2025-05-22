@@ -1,20 +1,18 @@
 ﻿@page "/"
+@using DataStructure.Components
 
 <header class="header">
   <img  class="codefrydev-logo" src="IconCodefrydev.svg" alt="Search"/>
 </header>
 
 <div class="search-container">
-<img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search" class="search-icon"/>
-<input type="text" class="search-box" placeholder="Search Problems">
+  <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search" class="search-icon"/>
+  <input type="text" class="search-box" placeholder="Search Problems">
 </div>
 
 <div class="quick-links">
-  @foreach(var link in _problems)
+  @foreach(var problem in _problems)
   {
-    <div class="link-card">
-      <img src="@link.LogoSource" class="link-icon" alt="@link.Name"/>
-      <div>@link.Name</div>
-    </div>
+    <ProblemCard Model="problem"/>
   }
 </div>

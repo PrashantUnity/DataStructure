@@ -8,12 +8,11 @@ public partial class Home
     [
         new()
         {
-            Name = "Two Sum",
+            Name = "MWS",
             LogoSource = "IconCodefrydev.svg",
             PageUri = "https://leetcode.com/problems/two-sum/",
-            Alt = "Two Sum",
-            Description = "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target."
+            Alt = "76. Minimum Window Substring",
+            Description = "Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window.",
         }
-
     ];
 }

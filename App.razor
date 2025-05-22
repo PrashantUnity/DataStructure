@@ -19,7 +19,7 @@
 
         return path switch
         {
-            _ when path.Contains("/folder") => typeof(HomePageLayout),
+            _ when path.Contains("/problem") => typeof(HomePageLayout),
             _ => typeof(MainLayout)
         };
     }
